@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 export default {
   content: [
     "./index.html",
@@ -11,6 +12,9 @@ export default {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
+    colors:{
+      white: colors.red
+    }
   },
   plugins: [
     require('flowbite/plugin')
