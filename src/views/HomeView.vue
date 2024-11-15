@@ -1,5 +1,5 @@
 <template>
-  <HeadText />
+  <!-- <HeadText /> -->
   <div>
   </div>
 </template>

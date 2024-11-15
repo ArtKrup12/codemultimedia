@@ -4,7 +4,9 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
-    "./node_modules/flowbite/**/*.js"
+    "./node_modules/flowbite/**/*.js",
+    './pages/**/*.{html,js}',
+    './components/**/*.{html,js}',
   ],
   theme: {
     extend: {},
@@ -13,7 +15,9 @@ export default {
       serif: ['Merriweather', 'serif'],
     },
     colors:{
-      white: colors.red
+      transparent: 'transparent',
+      current: 'currentColor',
+      exCon: '#8B8B8B'
     }
   },
   plugins: [
