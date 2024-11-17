@@ -1,5 +1,6 @@
 <template>
   <div>
+    <sideMenu/>
     <HeadText/>
     <div class="overflow-y-auto" style="height: 80vh;">
       <div v-if="lists.length > 0" v-for="list in lists" :key="list" class="mb-2 mt-2">
@@ -133,11 +134,13 @@ import {onMounted, ref} from 'vue'
 import {initFlowbite} from 'flowbite'
 import {useAddStore,useGetDrugStore,useGetListStore} from "@/stores/index.js";
 import router from "@/router/index.js";
+import sideMenu from "@/components/sideMenu.vue";
 
 export default {
   components: {
     HeadText,
-    Icon
+    Icon,
+    sideMenu
   },
   setup() {
     //form-data

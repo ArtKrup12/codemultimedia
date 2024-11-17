@@ -1,5 +1,8 @@
 <template>
+  <sideMenu/>
+  <navMenu/>
   <!-- <HeadText /> -->
+  <ExcerciseView class="w-auto sm:ml-[18%]"/>
   <div>
   </div>
 </template>
@@ -15,6 +18,9 @@
 </style>
 <script>
 import HeadText from "@/components/HeadText.vue"
+import sideMenu from "@/components/sideMenu.vue"
+import ExcerciseView from "./ExcerciseView.vue"
+import navMenu from "@/components/navMenu.vue"
 import { onMounted } from "vue"
 import {
   initAccordions,
@@ -31,7 +37,7 @@ import {
 } from "flowbite";
 export default {
   components: {
-    HeadText,
+    HeadText,sideMenu,ExcerciseView,navMenu
   },
   setup() {
     // initialize components based on data attribute selectors
