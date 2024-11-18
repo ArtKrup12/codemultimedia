@@ -27,6 +27,20 @@
                </a>
             </li>
             <li>
+               <router-link
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                  to="/lesson"
+                  @click="handlePage('lesson')">
+                  <span class="ms-3">จัดการบทเรียน</span>
+               </router-link>
+            </li>
+            <li>
+               <a href="#"
+                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <span class="ms-3">บนเรียน 2</span>
+               </a>
+            </li>
+            <li>
                <button type="button"
                   class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 active:bg-dark"
                   aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
@@ -196,10 +210,34 @@
 
 <script>
 import { Icon } from '@iconify/vue';
+import {usePageStore} from "@/stores";
+import {ref} from "vue";
 export default {
    components: {
       Icon
    },
+   setup(){
+    const pageStore = usePageStore();
+    const pageName = ref("home");
+
+    const pageName2 = localStorage.getItem("pageMenu" || '')
+    console.log(pageName2);
+    
+    if(pageName2 === null){
+
+    }else{
+      pageName.value = pageName2
+    }
+    const handlePage = async (pageNames) => {
+      pageName.value = pageNames;
+      pageStore.setPage(pageNames);
+    };
+    return {
+      pageName,
+      pageStore,
+      handlePage
+    }
+  }
 }
 
 </script>

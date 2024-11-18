@@ -69,6 +69,8 @@ export default {
     const pageName = ref("home");
 
     const pageName2 = localStorage.getItem("pageMenu" || '')
+    console.log(pageName2);
+    
     if(pageName2 === null){
 
     }else{

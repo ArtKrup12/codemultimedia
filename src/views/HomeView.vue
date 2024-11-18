@@ -2,7 +2,7 @@
   <sideMenu/>
   <navMenu/>
   <!-- <HeadText /> -->
-  <ExcerciseView class="w-auto sm:ml-[18%]"/>
+  <!-- <ExcerciseView class="w-auto sm:ml-[18%]"/> -->
   <div>
   </div>
 </template>

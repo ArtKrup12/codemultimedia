@@ -9,7 +9,7 @@ const route = useRoute();
 
 </script>
 <template>
-  <!-- <sideMenu/> -->
+  <sideMenu/>
   <!-- <navMenu/> -->
    <!-- <ExcerciseView/> -->
   <RouterView />
