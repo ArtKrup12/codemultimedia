@@ -25,7 +25,8 @@
         </thead>
         <tbody>
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                v-for="(item,index) in lessonList" :key="index">
                     Apple MacBook Pro 17"
                 </th>
                 <td class="px-6 py-4">
@@ -84,7 +85,18 @@
 
 <script>
 export default {
-
+    data(){
+        return {
+            lessonList:[
+                {topic:"บทเรียน 1"},
+                {topic:"บทเรียน 2"},
+                {topic:"บทเรียน 3"},
+                {topic:"บทเรียน 4"},
+                {topic:"บทเรียน 5"},
+                {topic:"บทเรียน 6"},
+            ]
+        }
+    }
 }
 </script>
 
