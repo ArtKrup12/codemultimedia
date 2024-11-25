@@ -1,5 +1,6 @@
 <template>
-  <div
+  <div></div>
+  <!-- <div
     class="fixed bottom-0 left-0 z-30 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600 " style="box-shadow: 0 -3px 1px rgba(84, 84, 84, 0.1);">
     <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
       <router-link :class="{
@@ -54,7 +55,7 @@
         <Icon icon="tabler:dots" width="24" height="24" />
         <span >ตั้งค่า</span></router-link>
     </div>
-  </div>
+  </div> -->
 </template>
 <script>
 import {Icon} from '@iconify/vue';

@@ -15,20 +15,22 @@
    <aside id="logo-sidebar"
       class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
       aria-label="Sidebar">
-      <div class="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+      <div class="h-full px-3 py-4 overflow-y-auto bg-blue-500 text-white">
          <a href="" class="flex items-center ps-2.5 mb-5">
             <span class="self-center text-xl font-semibold whitespace-nowrap">บนเรียน</span>
          </a>
          <ul class="space-y-2 font-medium">
             <li>
-               <a href="#"
-                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <router-link
+                  class="flex items-center p-2 text-white rounded-lg hover:bg-blue-700 group"
+                  to="/home"
+                  @click="handlePage('home')">
                   <span class="ms-3">หน้าหลัก</span>
-               </a>
+               </router-link>
             </li>
             <li>
                <router-link
-                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                  class="flex items-center p-2 text-white rounded-lg hover:bg-blue-700 group"
                   to="/lesson"
                   @click="handlePage('lesson')">
                   <span class="ms-3">จัดการบทเรียน</span>
@@ -36,13 +38,13 @@
             </li>
             <li>
                <a href="#"
-                  class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  class="flex items-center p-2 text-white rounded-lg hover:bg-blue-700 group">
                   <span class="ms-3">บนเรียน 2</span>
                </a>
             </li>
             <li>
                <button type="button"
-                  class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 active:bg-dark"
+                  class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 active:bg-dark"
                   aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
 
                   <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">บทที่ 1 ทดสอบบทเรียน</span>
@@ -55,24 +57,24 @@
                <ul id="dropdown-example" class="hidden py-2 space-y-2" data-tabs-active-classes="text-white">
                   <li>
                      <a href="#"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">หัวข้อย่อย
+                        class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">หัวข้อย่อย
                         1</a>
                   </li>
                   <li>
                      <a href="#"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">หัวข้อย่อย
+                        class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">หัวข้อย่อย
                         2</a>
                   </li>
                   <li>
                      <a href="#"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">หัวข้อย่อย
+                        class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">หัวข้อย่อย
                         3</a>
                   </li>
                </ul>
             </li>
             <li>
                <button type="button"
-                  class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100"
                   aria-controls="dropdown-example" data-collapse-toggle="dropdown-example1">
 
                   <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">บทที่ 2 ทดสอบบทเรียน</span>
@@ -85,17 +87,17 @@
                <ul id="dropdown-example1" class="hidden py-2 space-y-2">
                   <li>
                      <a href="#"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">หัวข้อย่อย
+                        class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">หัวข้อย่อย
                         1</a>
                   </li>
                   <li>
                      <a href="#"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">หัวข้อย่อย
+                        class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">หัวข้อย่อย
                         2</a>
                   </li>
                   <li>
                      <a href="#"
-                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">หัวข้อย่อย
+                        class="flex items-center w-full p-2 text-white transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">หัวข้อย่อย
                         3</a>
                   </li>
                </ul>

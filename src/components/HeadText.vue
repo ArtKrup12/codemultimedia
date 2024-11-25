@@ -1,11 +1,12 @@
 <template>
-  <div>
-    <span class="text-2xl font-bold" v-if="pageName === 'home'">รายการแจ้งเตือน</span>
-    <span class="text-2xl font-bold" v-else-if="pageName === 'drug'">รายการยา</span>
-    <span class="text-2xl font-bold" v-else-if="pageName === 'check'">รายการยาที่รอตรวจสอบ</span>
-    <span class="text-2xl font-bold" v-else-if="pageName === 'setting'">ข้อมูลส่วนตัว</span>
-    <span class="text-2xl font-bold" v-else>พบข้อผิดพลาด</span>
-    <div class="mt-3 bg-white" v-if="pageName !== 'home'">
+  <div class="headText">
+    <span class="text-xl font-bold" v-if="pageName === 'home'">รายการแจ้งเตือน</span>
+    <span class="text-xl font-bold" v-else-if="pageName === 'drug'">รายการยา</span>
+    <span class="text-xl font-bold" v-else-if="pageName === 'check'">รายการยาที่รอตรวจสอบ</span>
+    <span class="text-xl font-bold" v-else-if="pageName === 'setting'">ข้อมูลส่วนตัว</span>
+    <span class="text-xl font-bold" v-else-if="pageName === 'lesson'">จัดการบทเรียน</span>
+    <span class="text-xl font-bold" v-else>พบข้อผิดพลาด</span>
+    <!-- <div class="mt-3 bg-white" v-if="pageName !== 'home'">
       <form class="w-full mx-auto bg-white">
         <label for="default-search"
                class="mb-1 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -22,12 +23,14 @@
           </button>
         </div>
       </form>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <style scoped>
-
+.headText{
+  text-align: start;
+}
 </style>
 <script>
 import {usePageStore} from "@/stores";

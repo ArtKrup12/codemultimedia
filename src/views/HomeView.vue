@@ -1,7 +1,7 @@
 <template>
   <sideMenu/>
   <navMenu/>
-  <!-- <HeadText /> -->
+  <HeadText />
   <!-- <ExcerciseView class="w-auto sm:ml-[18%]"/> -->
   <div>
   </div>
