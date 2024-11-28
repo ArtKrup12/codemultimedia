@@ -21,12 +21,12 @@ export const useActionStudent = defineStore("ActionStudent", {
                 // );
                 let response = {
                     data:[
-                    {name: "สุชาติ ใจดี" ,class:"ม.5",room:"2"},
-                    {name: "คนไทย มีใจ" ,class:"ม.1",room:"1"},
-                    {name: "เพ็ญศรี ร่ำรวย" ,class:"ม.3",room:"3"},
-                    {name: "สมชาย ค้าขาย" ,class:"ม.4",room:"4"},
-                    {name: "ธนงทวย แซ่ตั้ง" ,class:"ม.5",room:"2"},
-                    {name: "เมธี วงคำเหลา" ,class:"ม.2",room:"7"}
+                    {name: "สุชาติ ใจดี" ,class:"ม.5",room:"2",sid: "12341"},
+                    {name: "คนไทย มีใจ" ,class:"ม.1",room:"1",sid: "12356"},
+                    {name: "เพ็ญศรี ร่ำรวย" ,class:"ม.3",room:"3",sid: "12231"},
+                    {name: "สมชาย ค้าขาย" ,class:"ม.4",room:"4",sid: "12462"},
+                    {name: "ธนงทวย แซ่ตั้ง" ,class:"ม.5",room:"2",sid: "12141"},
+                    {name: "เมธี วงคำเหลา" ,class:"ม.2",room:"7",sid: "12452"}
                 ]
                 }
                 this.dataStudentList = response.data;

@@ -14,6 +14,7 @@
             <tr>
               <th scope="col" class="px-6 py-3 text-base text-start">ลำดับ</th>
               <th scope="col" class="px-6 py-3 text-base text-start">ชื่อ</th>
+              <th scope="col" class="px-6 py-3 text-base text-start">เลขประจำตัว</th>
               <th scope="col" class="px-6 py-3 text-base text-start">
                 ระดับชั้น
               </th>
@@ -28,6 +29,9 @@
               </th>
               <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                 {{ item.name }}
+              </th>
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                {{ item.sid }}
               </th>
               <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                 {{ item.class }}/{{ item.room }}
