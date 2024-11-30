@@ -12,7 +12,7 @@ export default {
     extend: {},
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      serif: ['Merriweather', 'serif']
     },
     colors:{
       transparent: 'transparent',

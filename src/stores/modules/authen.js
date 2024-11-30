@@ -25,8 +25,8 @@ export const useAuthStore = defineStore("auth", {
                     passWord:'12345'
                 }
                 // console.log(response)
-                // if(mockup_data.userName === userName && mockup_data.passWord === passWord){
-                if(response.status === 200){
+                if(mockup_data.userName === userName && mockup_data.passWord === passWord){
+                // if(response.status === 200){
                     // console.log(userName,passWord)
                     // localStorage.setItem("user", JSON.stringify(response));
                     // localStorage.setItem("idUser", JSON.stringify(response.id));
