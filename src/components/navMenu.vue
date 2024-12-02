@@ -1,6 +1,4 @@
 <template>
-  
-
 <nav class="fixed top-0 left-0 z-30 w-full h-16 text-gray-900 bg-white border-gray-200 dark:bg-gray-900">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
   <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">

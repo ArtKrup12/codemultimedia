@@ -14,22 +14,22 @@ export const useAuthStore = defineStore("auth", {
             try {
                 // console.log(import.meta.env.API_URL)
                 const response = (await axios.post(
-                    import.meta.env.VITE_API_URL + "/authen/login",
+                    import.meta.env.VITE_API_URL + "/api_code/login.php",
                     { userName, passWord },
                     {
                         headers: { "Content-Type": "application/json" },
                     }
                 )).data
-                let mockup_data = {
-                    userName:'admin',
-                    passWord:'12345'
-                }
-                // console.log(response)
-                if(mockup_data.userName === userName && mockup_data.passWord === passWord){
-                // if(response.status === 200){
-                    // console.log(userName,passWord)
-                    // localStorage.setItem("user", JSON.stringify(response));
-                    // localStorage.setItem("idUser", JSON.stringify(response.id));
+                // let mockup_data = {
+                //     userName:'admin',
+                //     passWord:'12345'
+                // }
+                console.log(response)
+                // if(response.status){
+                if(response.status === true){
+                    console.log(userName,passWord)
+                    localStorage.setItem("user", JSON.stringify(response));
+                    localStorage.setItem("idUser", JSON.stringify(response.id));
                     return true
                 }else {
                     return false
