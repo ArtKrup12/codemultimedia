@@ -22,25 +22,30 @@
       <ul class="space-y-2 font-medium">
         <li>
           <router-link
-              class="flex items-center p-2 rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group"
+              class="flex items-center p-2 rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group currentPage"
               to="/home"
-              @click="handlePage('home')">
+              @click="handlePage('home')"
+              :class="{active: pageName === 'home'}">
             <span class="ms-3">หน้าหลัก</span>
           </router-link>
         </li>
         <li>
           <router-link
-              class="flex items-center p-2 rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group"
+              class="flex items-center p-2 rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group currentPage"
               to="/lesson"
-              @click="handlePage('lesson')">
+              @click="handlePage('lesson')"
+              :class="{active: pageName === 'lesson'}"
+              v-if="role === 'admin'">
             <span class="ms-3">จัดการบทเรียน</span>
           </router-link>
         </li>
         <li>
           <router-link
-              class="flex items-center p-2  rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group"
+              class="flex items-center p-2  rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group currentPage"
               to="/student"
-              @click="handlePage('student')">
+              @click="handlePage('student')"
+              :class="{active: pageName === 'student'}"
+              v-if="role === 'admin'">
             <span class="ms-3">จัดการนักเรียน</span>
           </router-link>
         </li>
@@ -121,6 +126,7 @@ export default {
   setup() {
     const pageStore = usePageStore();
     const pageName = ref("home");
+    let role = ref("admin")
 
     const pageName2 = localStorage.getItem("pageMenu" || '')
     console.log(pageName2);
@@ -137,11 +143,17 @@ export default {
     return {
       pageName,
       pageStore,
-      handlePage
+      handlePage,
+      role
     }
   }
 }
 
+
 </script>
 
-<style></style>
+<style>
+/* .currentPage.active{
+  background-color: blue;
+} */
+</style>
