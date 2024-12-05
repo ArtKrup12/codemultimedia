@@ -29,32 +29,32 @@
             <span class="ms-3">หน้าหลัก</span>
           </router-link>
         </li>
-        <li>
-          <router-link
-              class="flex items-center p-2 rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group currentPage"
-              to="/lesson"
-              @click="handlePage('lesson')"
-              :class="{active: pageName === 'lesson'}"
-              v-if="role === 'admin'">
-            <span class="ms-3">จัดการบทเรียน</span>
-          </router-link>
-        </li>
-        <li>
-          <router-link
-              class="flex items-center p-2  rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group currentPage"
-              to="/student"
-              @click="handlePage('student')"
-              :class="{active: pageName === 'student'}"
-              v-if="role === 'admin'">
-            <span class="ms-3">จัดการนักเรียน</span>
-          </router-link>
-        </li>
+        <!--        <li>-->
+        <!--          <router-link-->
+        <!--              class="flex items-center p-2 rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group currentPage"-->
+        <!--              to="/lesson"-->
+        <!--              @click="handlePage('lesson')"-->
+        <!--              :class="{active: pageName === 'lesson'}"-->
+        <!--              v-if="role === 'admin'">-->
+        <!--            <span class="ms-3">จัดการบทเรียน</span>-->
+        <!--          </router-link>-->
+        <!--        </li>-->
+<!--                <li>-->
+<!--                  <router-link-->
+<!--                      class="flex items-center p-2  rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group currentPage"-->
+<!--                      to="/student"-->
+<!--                      @click="handlePage('student')"-->
+<!--                      :class="{active: pageName === 'student'}"-->
+<!--                      v-if="role === 'admin'">-->
+<!--                    <span class="ms-3">จัดการนักเรียน</span>-->
+<!--                  </router-link>-->
+<!--                </li>-->
         <li>
           <button type="button"
                   class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-[#D5C9ED] hover:text-gray-600 active:bg-dark"
                   aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
 
-            <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">บทที่ 1 ทดสอบบทเรียน</span>
+            <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">บทที่ 1 ขับขี่ปลอดภัย</span>
             <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                  viewBox="0 0 10 6">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -63,19 +63,12 @@
           </button>
           <ul id="dropdown-example" class="hidden py-2 space-y-2" data-tabs-active-classes="text-white">
             <li>
-              <a href="#"
-                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-[#D5C9ED] hover:text-gray-600">หัวข้อย่อย
-                1</a>
+              <router-link   to="/content"
+                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-[#D5C9ED] hover:text-gray-600">เนื้อหา</router-link>
             </li>
             <li>
-              <a href="#"
-                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">หัวข้อย่อย
-                2</a>
-            </li>
-            <li>
-              <a href="#"
-                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">หัวข้อย่อย
-                3</a>
+              <router-link to="/test"
+                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">แบบทดสอบเก็บคะแนน</router-link>
             </li>
           </ul>
         </li>

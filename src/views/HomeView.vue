@@ -1,8 +1,9 @@
 <template>
-  <sideMenu/>
-  <navMenu/>
+<!--  <sideMenu/>-->
+<!--  <navMenu/>-->
   <HeadText />
   <!-- <ExcerciseView class="w-auto sm:ml-[18%]"/> -->
+ <div class="mt-5 ml-80">ยินดีตอนรับเข้าสู่ระบบสื่อการเรียรการสอน</div>
   <div>
   </div>
 </template>
@@ -18,7 +19,7 @@
 </style>
 <script>
 import HeadText from "@/components/HeadText.vue"
-import sideMenu from "@/components/sideMenu.vue"
+// import sideMenu from "@/components/sideMenu.vue"
 import ExcerciseView from "./ExcerciseView.vue"
 import navMenu from "@/components/navMenu.vue"
 import { onMounted } from "vue"
@@ -37,7 +38,9 @@ import {
 } from "flowbite";
 export default {
   components: {
-    HeadText,sideMenu,ExcerciseView,navMenu
+    HeadText,
+    ExcerciseView,
+    navMenu
   },
   setup() {
     // initialize components based on data attribute selectors
