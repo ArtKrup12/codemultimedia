@@ -9,74 +9,179 @@
       <div id="defaultTabContent">
         <div class=" p-2 bg-white rounded-lg md:p-2 dark:bg-gray-800" id="about" role="tabpanel"
              aria-labelledby="about-tab">
-          <div class="flex justify-between">
-            <div class="w-3/4 mr-1">
-              <ul class="space-y-4 text-left  text-gray-500 list-decimal list-inside dark:text-gray-400">
-                <li>
-                  ควรสวมหมวกกันน็อคตอนไหน
+          <div class="">
+            <div class="">
+              <ul class="space-y-4 p-2 text-left  text-gray-500 list-decimal list-inside dark:text-gray-400">
+                <li class="p-4 bg-blue-100 rounded-md">
+                  <label class="font-bold">ควรสวมหมวกกันน็อคตอนไหน</label>
                   <ol class="ps-5 mt-2 space-y-1 list-none">
                     <li>
                       <label class="flex items-center space-x-2">
                         <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <span>You might feel like you are being really "organized".</span>
+                        <span>ถึงที่หมายแล้วค่อยสวมหมวกกันน็อค</span>
                       </label>
                     </li>
                     <li>
                       <label class="flex items-center space-x-2">
                         <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <span>Nested navigation in UIs is a bad idea too, keep things as flat as possible.</span>
+                        <span>ก่อนออกเดินทางทุกครั้ง และล็อคสายรัดคาง</span>
                       </label>
                     </li>
                     <li>
                       <label class="flex items-center space-x-2">
                         <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <span>Nesting tons of folders in your source code is also not helpful.</span>
+                        <span>ขณะขับขี่มอเตอร์ไซค์</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ไม่สวมหมวกกันน็อค เพราะสาวๆจะไม่เห็นหน้า</span>
                       </label>
                     </li>
                   </ol>
                 </li>
-                <li>
-                  ควรสวมหมวกกันน็อคตอนไหน
+                <li class="p-4 bg-blue-100 rounded-md">
+                  <label class="font-bold">ควรสวมหมวกกันน็อคตอนไหน</label>
                   <ol class="ps-5 mt-2 space-y-1 list-none">
                     <li>
                       <label class="flex items-center space-x-2">
                         <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <span>You might feel like you are being really "organized".</span>
+                        <span>ถึงที่หมายแล้วค่อยสวมหมวกกันน็อค</span>
                       </label>
                     </li>
                     <li>
                       <label class="flex items-center space-x-2">
                         <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <span>Nested navigation in UIs is a bad idea too, keep things as flat as possible.</span>
+                        <span>ก่อนออกเดินทางทุกครั้ง และล็อคสายรัดคาง</span>
                       </label>
                     </li>
                     <li>
                       <label class="flex items-center space-x-2">
                         <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <span>Nesting tons of folders in your source code is also not helpful.</span>
+                        <span>ขณะขับขี่มอเตอร์ไซค์</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ไม่สวมหมวกกันน็อค เพราะสาวๆจะไม่เห็นหน้า</span>
                       </label>
                     </li>
                   </ol>
                 </li>
-                <li>
-                  ควรสวมหมวกกันน็อคตอนไหน
+                <li class="p-4 bg-blue-100 rounded-md">
+                  <label class="font-bold">ควรสวมหมวกกันน็อคตอนไหน</label>
                   <ol class="ps-5 mt-2 space-y-1 list-none">
                     <li>
                       <label class="flex items-center space-x-2">
                         <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <span>You might feel like you are being really "organized".</span>
+                        <span>ถึงที่หมายแล้วค่อยสวมหมวกกันน็อค</span>
                       </label>
                     </li>
                     <li>
                       <label class="flex items-center space-x-2">
                         <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <span>Nested navigation in UIs is a bad idea too, keep things as flat as possible.</span>
+                        <span>ก่อนออกเดินทางทุกครั้ง และล็อคสายรัดคาง</span>
                       </label>
                     </li>
                     <li>
                       <label class="flex items-center space-x-2">
                         <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-                        <span>Nesting tons of folders in your source code is also not helpful.</span>
+                        <span>ขณะขับขี่มอเตอร์ไซค์</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ไม่สวมหมวกกันน็อค เพราะสาวๆจะไม่เห็นหน้า</span>
+                      </label>
+                    </li>
+                  </ol>
+                </li>
+                <li class="p-4 bg-blue-100 rounded-md">
+                  <label class="font-bold">ควรสวมหมวกกันน็อคตอนไหน</label>
+                  <ol class="ps-5 mt-2 space-y-1 list-none">
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ถึงที่หมายแล้วค่อยสวมหมวกกันน็อค</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ก่อนออกเดินทางทุกครั้ง และล็อคสายรัดคาง</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ขณะขับขี่มอเตอร์ไซค์</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ไม่สวมหมวกกันน็อค เพราะสาวๆจะไม่เห็นหน้า</span>
+                      </label>
+                    </li>
+                  </ol>
+                </li>
+                <li class="p-4 bg-blue-100 rounded-md">
+                  <label class="font-bold">ควรสวมหมวกกันน็อคตอนไหน</label>
+                  <ol class="ps-5 mt-2 space-y-1 list-none">
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ถึงที่หมายแล้วค่อยสวมหมวกกันน็อค</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ก่อนออกเดินทางทุกครั้ง และล็อคสายรัดคาง</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ขณะขับขี่มอเตอร์ไซค์</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ไม่สวมหมวกกันน็อค เพราะสาวๆจะไม่เห็นหน้า</span>
+                      </label>
+                    </li>
+                  </ol>
+                </li>
+                <li class="p-4 bg-blue-100 rounded-md">
+                  <label class="font-bold">ควรสวมหมวกกันน็อคตอนไหน</label>
+                  <ol class="ps-5 mt-2 space-y-1 list-none">
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ถึงที่หมายแล้วค่อยสวมหมวกกันน็อค</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ก่อนออกเดินทางทุกครั้ง และล็อคสายรัดคาง</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ขณะขับขี่มอเตอร์ไซค์</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label class="flex items-center space-x-2">
+                        <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                        <span>ไม่สวมหมวกกันน็อค เพราะสาวๆจะไม่เห็นหน้า</span>
                       </label>
                     </li>
                   </ol>
@@ -84,10 +189,10 @@
               </ul>
 
             </div>
-            <div class="w-1/4 mr-1 flex justify-start">
-              b
-            </div>
           </div>
+        </div>
+        <div class="mb-4 me-2 flex justify-end">
+          <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">ถัดไป</button>
         </div>
       </div>
     </div>
