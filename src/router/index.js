@@ -25,19 +25,9 @@ const router = createRouter({
       component: () => import('../views/testView.vue')
     },
     {
-      path: '/drug',
-      name: 'drug',
-      component: () => import('../views/DrugView.vue')
-    },
-    {
-      path: '/check',
-      name: 'check',
-      component: () => import('../views/CheckView.vue')
-    },
-    {
-      path: '/setting',
-      name: 'setting',
-      component: () => import('../views/SettingView.vue')
+      path: '/assign',
+      name: 'assign',
+      component: () => import('../views/assignView.vue')
     },
     {
       path: '/lesson',

@@ -29,26 +29,6 @@
             <span class="ms-3">หน้าหลัก</span>
           </router-link>
         </li>
-        <!--        <li>-->
-        <!--          <router-link-->
-        <!--              class="flex items-center p-2 rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group currentPage"-->
-        <!--              to="/lesson"-->
-        <!--              @click="handlePage('lesson')"-->
-        <!--              :class="{active: pageName === 'lesson'}"-->
-        <!--              v-if="role === 'admin'">-->
-        <!--            <span class="ms-3">จัดการบทเรียน</span>-->
-        <!--          </router-link>-->
-        <!--        </li>-->
-<!--                <li>-->
-<!--                  <router-link-->
-<!--                      class="flex items-center p-2  rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group currentPage"-->
-<!--                      to="/student"-->
-<!--                      @click="handlePage('student')"-->
-<!--                      :class="{active: pageName === 'student'}"-->
-<!--                      v-if="role === 'admin'">-->
-<!--                    <span class="ms-3">จัดการนักเรียน</span>-->
-<!--                  </router-link>-->
-<!--                </li>-->
         <li>
           <button type="button"
                   class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-[#D5C9ED] hover:text-gray-600 active:bg-dark"
@@ -67,40 +47,23 @@
                  class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-[#D5C9ED] hover:text-gray-600">เนื้อหา</router-link>
             </li>
             <li>
+              <router-link   to="/assign"
+                             class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-[#D5C9ED] hover:text-gray-600">ส่งงาน</router-link>
+            </li>
+            <li>
               <router-link to="/test"
                  class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">แบบทดสอบเก็บคะแนน</router-link>
             </li>
           </ul>
         </li>
         <li>
-          <button type="button"
-                  class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-[#D5C9ED] hover:text-gray-600"
-                  aria-controls="dropdown-example" data-collapse-toggle="dropdown-example1">
-
-            <span class="flex-1 ms-3 text-left rtl:text-right  whitespace-nowrap">บทที่ 2 ทดสอบบทเรียน</span>
-            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                 viewBox="0 0 10 6">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 1 4 4 4-4"/>
-            </svg>
-          </button>
-          <ul id="dropdown-example1" class="hidden py-2 space-y-2">
-            <li>
-              <a href="#"
-                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">หัวข้อย่อย
-                1</a>
-            </li>
-            <li>
-              <a href="#"
-                 class="flex items-center w-full p-2 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">หัวข้อย่อย
-                2</a>
-            </li>
-            <li>
-              <a href="#"
-                 class="flex items-center w-full p-2  transition duration-75 rounded-lg pl-11 group hover:bg-gray-100">หัวข้อย่อย
-                3</a>
-            </li>
-          </ul>
+          <router-link
+              class="flex items-center p-2 rounded-lg hover:bg-[#D5C9ED] hover:text-gray-600 group currentPage"
+              to="/home"
+              @click="handlePage('home')"
+              :class="{active: pageName === 'home'}">
+            <span class="ms-3">ข้อมูลผู้จัดทำ</span>
+          </router-link>
         </li>
       </ul>
     </div>

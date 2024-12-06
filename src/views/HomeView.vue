@@ -20,7 +20,7 @@
 <script>
 import HeadText from "@/components/HeadText.vue"
 // import sideMenu from "@/components/sideMenu.vue"
-import ExcerciseView from "./ExcerciseView.vue"
+// import ExcerciseView from "./ExcerciseView.vue"
 import navMenu from "@/components/navMenu.vue"
 import { onMounted } from "vue"
 import {
@@ -39,7 +39,6 @@ import {
 export default {
   components: {
     HeadText,
-    ExcerciseView,
     navMenu
   },
   setup() {
