@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vue-pdf-viewer/viewer": "^1.8.1-rc.1",
     "axios": "^1.7.7",
     "dotenv": "^16.4.5",
     "flowbite": "^2.5.2",

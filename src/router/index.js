@@ -15,14 +15,31 @@ const router = createRouter({
       component: () => import('../views/HomeView.vue')
     },
     {
-      path: '/content',
+      path: '/content/:id',
       name: 'content',
-      component: () => import('../views/contentView.vue')
+      component: () => import('../views/contentView.vue'),
+      props: true,
     },
     {
-      path: '/test',
+      path: '/content_pdf/:id',
+      name: 'content_pdf',
+      component: () => import('../views/contentPdfView.vue'),
+      props: true,
+    },
+    {
+      path: '/infor',
+      name: 'infor',
+      component: () => import('../views/inforView.vue')
+    },
+    {
+      path: '/test/:id',
       name: 'test',
       component: () => import('../views/testView.vue')
+    },
+    {
+      path: '/pre_test/:id',
+      name: 'pre_test',
+      component: () => import('../views/preTestView.vue')
     },
     {
       path: '/assign',
@@ -30,8 +47,8 @@ const router = createRouter({
       component: () => import('../views/assignView.vue')
     },
     {
-      path: '/lesson',
-      name: 'lesson',
+      path: '/manageStudent',
+      name: 'manageStudent',
       component: () => import('../views/LessonView.vue')
     },
     {
@@ -41,5 +58,6 @@ const router = createRouter({
     }
   ]
 })
+
 
 export default router

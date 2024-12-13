@@ -14,11 +14,8 @@ export const useAuthStore = defineStore("auth", {
             try {
                 // console.log(import.meta.env.API_URL)
                 const response = (await axios.post(
-                    import.meta.env.VITE_API_URL + "/api_code/login.php",
-                    { userName, passWord },
-                    {
-                        headers: { "Content-Type": "application/json" },
-                    }
+                    import.meta.env.VITE_API_URL + "/user/login",
+                    { userName, passWord }
                 )).data
                 // let mockup_data = {
                 //     userName:'admin',
@@ -26,10 +23,11 @@ export const useAuthStore = defineStore("auth", {
                 // }
                 console.log(response)
                 // if(response.status){
-                if(response.status === true){
+                if(response.status === 200){
                     console.log(userName,passWord)
                     localStorage.setItem("user", JSON.stringify(response));
-                    localStorage.setItem("idUser", JSON.stringify(response.id));
+                    localStorage.setItem("idUser", JSON.stringify(response.id.id));
+                    localStorage.setItem("role", response.id.role);
                     return true
                 }else {
                     return false

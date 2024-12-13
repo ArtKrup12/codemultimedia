@@ -55,6 +55,7 @@ export default {
     const SignIn = async () => {
       // console.log(userName.value,passWord.value)
       const data = await authStore.login(userName.value, passWord.value)
+      console.log('data',data)
       if (data) {
         await Swal.fire({
           position: "center",

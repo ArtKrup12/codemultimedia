@@ -13,7 +13,7 @@
   <div class="text-center m-2 p-2 h-screen rounded-md sm:ml-[16.5rem]">
     <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <div
-          class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
+          class="flex flex-wrap text-sm font-medium text-center bg-[#7AB2D3] text-[#4A628A] border-b border-gray-200 rounded-t-lg  dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
           id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
         <span class="p-3 pl-4">ส่งงาน</span>
       </div>
@@ -32,7 +32,7 @@
             {{ task.description }}
           </p>
           <button data-modal-target="default-modal" data-modal-toggle="default-modal"
-                  class="flex items-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  class="flex items-center text-white bg-green-400 hover:bg-[#7AB2D3] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                   type="button">
             ส่งงาน
             <svg
@@ -115,7 +115,7 @@
         <div
             class="flex items-center justify-end p-1 m-2 md:p-2 border-t border-gray-200 rounded-b dark:border-gray-600">
           <button data-modal-hide="default-modal" type="button"
-                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  class="text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             บันทึก
           </button>
           <button data-modal-hide="default-modal" type="button"
@@ -137,6 +137,10 @@ import {
 
 export default {
   setup() {
+
+
+
+
     const tasks = ref(
         Array.from({length: 3}, (_, i) => ({
           title: `งานที่ ${i + 1}`,
