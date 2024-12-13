@@ -6,7 +6,7 @@
       <div
           class="flex flex-wrap text-sm font-medium text-center  border-b border-gray-200 rounded-t-lg bg-[#7AB2D3] text-[#4A628A] dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
           id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
-        <span class="p-3 pl-4">ขับขี่ปลอดภัย honda</span>
+        <span class="p-3 pl-4 font-bold">ขับขี่ปลอดภัย honda</span>
       </div>
       <div id="defaultTabContent">
         <div class=" p-2 bg-white rounded-lg md:p-2 dark:bg-gray-800" id="about" role="tabpanel"

@@ -15,7 +15,7 @@
       <div
           class="flex flex-wrap text-sm font-medium text-center bg-[#7AB2D3] text-[#4A628A] border-b border-gray-200 rounded-t-lg  dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
           id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
-        <span class="p-3 pl-4">ส่งงาน</span>
+        <span class="p-3 pl-4 font-bold">ส่งงาน</span>
       </div>
       <div id="defaultTabContent" class="grid grid-cols-1">
         <div

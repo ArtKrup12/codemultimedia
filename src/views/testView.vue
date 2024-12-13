@@ -4,7 +4,7 @@
       <div
           class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-[#7AB2D3] dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
           id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
-        <span class="p-3 pl-4">ข้อสอบเก็บคะแนน</span>
+        <span class="p-3 pl-4 font-bold">ข้อสอบเก็บคะแนน</span>
       </div>
       <div id="defaultTabContent">
         <div class=" p-2 bg-white rounded-lg md:p-2 dark:bg-gray-800" id="about" role="tabpanel"
@@ -53,6 +53,7 @@
 import { defineComponent, onMounted, ref, reactive, watch } from 'vue';
 import { useGetTestStore } from "@/stores/index.js";
 import { useRoute } from "vue-router";
+import Swal from "sweetalert2";
 
 export default defineComponent({
   setup() {
@@ -80,11 +81,27 @@ export default defineComponent({
       console.log(`EmpId ${idUser.value} Question ${index + 1} Selected Answer ID (${answerKey}):`, answerId);
     };
 
-    const submitAnswers = () => {
+    const submitAnswers =  () => {
       const submissionData = testList.testList.map((question, index) => ({
         questionId: question.id,
         selectedAnswerId: selectedAnswers[index]
       }));
+      Swal.fire({
+        title: "คุณต้องการส่งคำตอบ?",
+        text: "ยืนยันเพื่อส่งคำตอบ!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "ยืนยัน",
+        cancelButtonText:"ปิด",
+        allowOutsideClick:false
+      }).then((result) => {
+        if (result.isConfirmed) {
+          console.log(submissionData)
+        }
+      });
+
 
       console.log('Full Test Submission:', submissionData);
     };
