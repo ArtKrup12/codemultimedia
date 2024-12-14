@@ -48,7 +48,7 @@
                     <span class="ms-3">จัดการบทเรียน</span>
                   </router-link>
                 </li>
-        <li v-for="lesson in listLessionStore.lessionList" :key="lesson.id">
+        <li v-if="roleData === '1'" v-for="lesson in listLessionStore.lessionList" :key="lesson.id">
           <button type="button"
                   @click="toggleCollapse(lesson.id)"
                   class="flex items-center w-full p-2 text-[#DFF2EB] transition duration-75 rounded-sm group hover:bg-[#7AB2D3] hover:text-gray-600 active:bg-dark"
@@ -65,6 +65,18 @@
             </svg>
           </button>
           <ul :id="lesson.id" class="hidden py-2 space-y-2" data-tabs-active-classes="text-gray-600">
+            <li>
+              <router-link
+                  :to="'/pre_test/'+lesson.id"
+                  @click="handlePage('pretest'+lesson.id)"
+                  :class="{'bg-[#7AB2D3] text-gray-600': pageName === 'pretest'+lesson.id}"
+                  class="flex items-center w-full p-2  transition duration-75 rounded-sm pl-11 group hover:bg-[#7AB2D3] hover:text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 15 15">
+                  <path fill="#DFF2EB" d="M9.875 7.5a2.375 2.375 0 1 1-4.75 0a2.375 2.375 0 0 1 4.75 0"/>
+                </svg>
+                แบบทดสอบก่อนเรียน
+              </router-link>
+            </li>
             <li>
               <router-link :to="'/content/'+lesson.id"   @click="handlePage('vdo'+lesson.id)"
                            :class="{'bg-[#7AB2D3] text-gray-600': pageName === 'vdo'+lesson.id}"
@@ -95,18 +107,6 @@
                   <path fill="#DFF2EB" d="M9.875 7.5a2.375 2.375 0 1 1-4.75 0a2.375 2.375 0 0 1 4.75 0"/>
                 </svg>
                 ส่งงาน
-              </router-link>
-            </li>
-            <li>
-              <router-link
-                  :to="'/pre_test/'+lesson.id"
-                  @click="handlePage('pretest'+lesson.id)"
-                  :class="{'bg-[#7AB2D3] text-gray-600': pageName === 'pretest'+lesson.id}"
-                  class="flex items-center w-full p-2  transition duration-75 rounded-sm pl-11 group hover:bg-[#7AB2D3] hover:text-gray-600">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 15 15">
-                  <path fill="#DFF2EB" d="M9.875 7.5a2.375 2.375 0 1 1-4.75 0a2.375 2.375 0 0 1 4.75 0"/>
-                </svg>
-                แบบทดสอบก่อนเรียน
               </router-link>
             </li>
             <li>

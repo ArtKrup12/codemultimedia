@@ -17,15 +17,15 @@
 
       <div class="mt-6 text-left">
         <p class="text-sm text-gray-700 dark:text-gray-300">
-          <strong>Email:</strong> <a href="mailto:{{ organizerInfo.email }}" class="text-blue-500 hover:underline">{{ organizerInfo.email }}</a>
+          <strong>อีเมล:</strong> <a href="mailto:{{ organizerInfo.email }}" class="text-blue-500 hover:underline">{{ organizerInfo.email }}</a>
         </p>
         <p class="text-sm text-gray-700 dark:text-gray-300 mt-2">
-          <strong>Phone:</strong> <a href="tel:{{ organizerInfo.phone }}" class="text-blue-500 hover:underline">{{ organizerInfo.phone }}</a>
+          <strong>มือถือ:</strong> <a href="tel:{{ organizerInfo.phone }}" class="text-blue-500 hover:underline">{{ organizerInfo.phone }}</a>
         </p>
-        <p class="text-sm text-gray-700 dark:text-gray-300 mt-2">
-          <strong>Company:</strong>
-          <a :href="organizerInfo.companyWebsite" target="_blank" class="text-blue-500 hover:underline">{{ organizerInfo.company }}</a>
-        </p>
+<!--        <p class="text-sm text-gray-700 dark:text-gray-300 mt-2">-->
+<!--          <strong>Company:</strong>-->
+<!--          <a :href="organizerInfo.companyWebsite" target="_blank" class="text-blue-500 hover:underline">{{ organizerInfo.company }}</a>-->
+<!--        </p>-->
       </div>
 
       <div class="mt-4 flex justify-center space-x-4">

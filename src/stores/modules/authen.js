@@ -35,6 +35,28 @@ export const useAuthStore = defineStore("auth", {
             } catch (error) {
                 console.error(error);
             }
+        } ,
+        async register(registrationData) {
+            try {
+                // console.log(import.meta.env.API_URL)
+                const response = (await axios.post(
+                    import.meta.env.VITE_API_URL + "/user/addUser",
+                    registrationData
+                )).data
+                // let mockup_data = {
+                //     userName:'admin',
+                //     passWord:'12345'
+                // }
+                console.log(response)
+                // if(response.status){
+                if(response.status === 200){
+                    return true
+                }else {
+                    return false
+                }
+            } catch (error) {
+                console.error(error);
+            }
         }
     },
 });
